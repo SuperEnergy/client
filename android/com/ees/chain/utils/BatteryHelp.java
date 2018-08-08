@@ -18,6 +18,15 @@ public class BatteryHelp {
         }
         return cap;
     }
+    
+    /**
+     * 获取电池容量
+     * @param context
+     * @return
+     */
+    private static double getBatteryCapacity1(Context context) {
+        return batteryCapacity;
+    }
 
     /**
      * 获取电池容量
