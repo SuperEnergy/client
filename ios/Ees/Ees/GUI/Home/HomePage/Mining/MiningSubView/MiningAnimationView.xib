@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MiningAnimationView">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="314"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYt-aE-SHt">
+                    <rect key="frame" x="0.0" y="0.0" width="336" height="314"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2N-bn-O3z">
+                            <rect key="frame" x="150.5" y="78" width="35.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXh-ZD-VJA">
+                            <rect key="frame" x="153.5" y="100" width="29" height="56.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="47"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXR-A1-CTs" userLabel="Line View">
+                            <rect key="frame" x="8" y="156.5" width="320" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="2Zk-P8-ydN"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最大容量:1000(mAh)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDq-xq-rMb">
+                            <rect key="frame" x="101.5" y="162.5" width="133" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_plug2.png" translatesAutoresizingMaskIntoConstraints="NO" id="OYR-Hm-VhH">
+                            <rect key="frame" x="150" y="184.5" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="Veb-d3-sQe"/>
+                                <constraint firstAttribute="width" constant="36" id="tbj-FA-iVY"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="aDq-xq-rMb" firstAttribute="top" secondItem="FXR-A1-CTs" secondAttribute="bottom" constant="5" id="796-5p-n2k"/>
+                        <constraint firstItem="OYR-Hm-VhH" firstAttribute="centerX" secondItem="iYt-aE-SHt" secondAttribute="centerX" id="ADF-E7-LD2"/>
+                        <constraint firstItem="aDq-xq-rMb" firstAttribute="centerX" secondItem="iYt-aE-SHt" secondAttribute="centerX" id="Em3-uG-dr7"/>
+                        <constraint firstItem="OYR-Hm-VhH" firstAttribute="top" secondItem="aDq-xq-rMb" secondAttribute="bottom" constant="5" id="NIo-H8-18p"/>
+                        <constraint firstItem="D2N-bn-O3z" firstAttribute="centerX" secondItem="iYt-aE-SHt" secondAttribute="centerX" id="SBU-O3-6vW"/>
+                        <constraint firstAttribute="trailingMargin" secondItem="FXR-A1-CTs" secondAttribute="trailing" id="WcM-UT-a9S"/>
+                        <constraint firstItem="FXR-A1-CTs" firstAttribute="centerY" secondItem="iYt-aE-SHt" secondAttribute="centerY" id="Wnx-xM-eEL"/>
+                        <constraint firstItem="FXR-A1-CTs" firstAttribute="leading" secondItem="iYt-aE-SHt" secondAttribute="leadingMargin" id="X2f-8x-5kA"/>
+                        <constraint firstItem="wXh-ZD-VJA" firstAttribute="top" secondItem="D2N-bn-O3z" secondAttribute="bottom" constant="5" id="Zu4-kN-Tf4"/>
+                        <constraint firstItem="FXR-A1-CTs" firstAttribute="top" secondItem="wXh-ZD-VJA" secondAttribute="bottom" id="g8v-RE-tnP"/>
+                        <constraint firstItem="wXh-ZD-VJA" firstAttribute="centerX" secondItem="iYt-aE-SHt" secondAttribute="centerX" id="rEv-9H-MYL"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iYt-aE-SHt" secondAttribute="bottom" id="e0i-uY-dov"/>
+                <constraint firstItem="iYt-aE-SHt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iyp-7a-pM7"/>
+                <constraint firstItem="iYt-aE-SHt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uPJ-mQ-chV"/>
+                <constraint firstAttribute="trailing" secondItem="iYt-aE-SHt" secondAttribute="trailing" id="zSX-qA-xRx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="OYR-Hm-VhH" id="jrD-9w-OeW"/>
+                <outlet property="miningLabel" destination="wXh-ZD-VJA" id="hHB-jt-LBI"/>
+                <outlet property="speedRateMiningLabel" destination="D2N-bn-O3z" id="BdS-4o-1yf"/>
+                <outlet property="totalLabel" destination="aDq-xq-rMb" id="9ji-KW-XpM"/>
+            </connections>
+            <point key="canvasLocation" x="7" y="-125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_plug2.png" width="36" height="36"/>
+    </resources>
+</document>

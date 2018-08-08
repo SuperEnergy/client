@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16G1114" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MessageTipCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Qa-m7-OH6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="42.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_msg.png" translatesAutoresizingMaskIntoConstraints="NO" id="HYE-bm-6E5">
+                                <rect key="frame" x="10" y="7.5" width="28" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="UQH-S7-8TX"/>
+                                    <constraint firstAttribute="height" constant="28" id="mZe-d8-EB1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Message Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3t-Jc-IFL">
+                                <rect key="frame" x="46" y="6.5" width="213" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0ac-lB-dek"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xb-xb-NsY">
+                                <rect key="frame" x="280" y="6.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8Xb-xb-NsY" secondAttribute="height" multiplier="1:1" id="rpE-zm-ySN"/>
+                                    <constraint firstAttribute="width" constant="30" id="ym3-Te-3e8"/>
+                                </constraints>
+                                <state key="normal" image="btn_close_press.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeMessage:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="y1Q-a2-r2b"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hz5-vu-QjT">
+                                <rect key="frame" x="269" y="9.5" width="1" height="24"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="6ub-RY-FXg"/>
+                                    <constraint firstAttribute="height" constant="24" id="kre-HU-MB8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z3t-Jc-IFL" firstAttribute="centerY" secondItem="4Qa-m7-OH6" secondAttribute="centerY" id="1Rn-aR-Cfl"/>
+                            <constraint firstItem="HYE-bm-6E5" firstAttribute="leading" secondItem="4Qa-m7-OH6" secondAttribute="leading" constant="10" id="544-yD-jnY"/>
+                            <constraint firstAttribute="trailing" secondItem="8Xb-xb-NsY" secondAttribute="trailing" constant="10" id="7AP-RL-ybq"/>
+                            <constraint firstItem="z3t-Jc-IFL" firstAttribute="leading" secondItem="HYE-bm-6E5" secondAttribute="trailing" constant="8" id="EEj-v9-ZNL"/>
+                            <constraint firstItem="Hz5-vu-QjT" firstAttribute="leading" secondItem="z3t-Jc-IFL" secondAttribute="trailing" constant="10" id="Nur-z5-yai"/>
+                            <constraint firstItem="8Xb-xb-NsY" firstAttribute="leading" secondItem="Hz5-vu-QjT" secondAttribute="trailing" constant="10" id="gce-Sp-Gcv"/>
+                            <constraint firstItem="Hz5-vu-QjT" firstAttribute="centerY" secondItem="4Qa-m7-OH6" secondAttribute="centerY" id="hzA-7v-Zux"/>
+                            <constraint firstItem="8Xb-xb-NsY" firstAttribute="centerY" secondItem="4Qa-m7-OH6" secondAttribute="centerY" id="muF-7T-i6Z"/>
+                            <constraint firstItem="HYE-bm-6E5" firstAttribute="centerY" secondItem="4Qa-m7-OH6" secondAttribute="centerY" id="uHt-N1-MwL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4Qa-m7-OH6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Csu-pB-cAT"/>
+                    <constraint firstItem="4Qa-m7-OH6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FPC-Ex-hIO"/>
+                    <constraint firstAttribute="bottom" secondItem="4Qa-m7-OH6" secondAttribute="bottom" constant="1" id="WDt-Ys-8wP"/>
+                    <constraint firstAttribute="trailing" secondItem="4Qa-m7-OH6" secondAttribute="trailing" id="jus-Vz-UkJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellBgView" destination="4Qa-m7-OH6" id="0XP-ZK-cEr"/>
+                <outlet property="closeBtn" destination="8Xb-xb-NsY" id="I0c-az-Gae"/>
+                <outlet property="messageLabel" destination="z3t-Jc-IFL" id="cxd-ec-E3F"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_close_press.png" width="32" height="32"/>
+        <image name="ic_msg.png" width="36" height="36"/>
+    </resources>
+</document>

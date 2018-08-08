@@ -1,0 +1,78 @@
+{
+    "success": true, 
+    "amount": 7, 
+    "objects": [
+        {
+            "id": "5a393e77bb57cf37bc2d3ee0", 
+            "key": "startMiningTime", 
+            "name": "开始收集时间",
+            "value": "0,20",
+            "desc": "0,20指的是开始收集时间段，需要客户端解析",
+            "status": 1, 
+            "createDate": 1513700983156, 
+            "lastUpdateTime": 1514453756420
+        }, 
+        {
+            "id": "5a3d2e7db259200b361cc700", 
+            "key": "submitMiningTime", 
+            "name": "收取时间",
+            "value": "20,24",
+            "desc": "",
+            "status": 1, 
+            "createDate": 1513959037678, 
+            "lastUpdateTime": 1514453795180
+        }, 
+        {
+            "id": "5a3d2e96b259200b361cc701", 
+            "key": "androidUrl", 
+            "name": "android下载页面", 
+            "value": "http://www.qq.com", 
+            "desc": "android下载页面", 
+            "status": 1, 
+            "createDate": 1513959062842, 
+            "lastUpdateTime": 1514639072426
+        }, 
+        {
+            "id": "5a424cdab259200b36fc1be4", 
+            "key": "iosUrl", 
+            "name": "ios下载页面", 
+            "value": "http://ees.gpmini.comb",
+            "desc": "ios下载页面", 
+            "status": 1, 
+            "createDate": 1514294490487, 
+            "lastUpdateTime": 1514639061863
+        }, 
+        {
+            "id": "5a462192b259206eb5e89c2f", 
+            "key": "shareDesc", 
+            "name": "分享描述", 
+            "value": "【超级能源EES】能源补偿倡导者. 你耗能我补偿,限量 免费 赠送. 复制此消息, 分享给小伙伴一起开始收集能量吧! ",
+            "desc": "分享内容", 
+            "status": 1, 
+            "createDate": 1514545554396, 
+            "lastUpdateTime": 1514639287742
+        }, 
+        {
+            "id": "5a46210bb259206eb5e89c2e", 
+            "key": "shareUrl", 
+            "name": "分享URL", 
+            "value": "http://www.eeschain.com/site/page/register?rid=",
+            "desc": "分享URL", 
+            "status": 1, 
+            "createDate": 1514545419064, 
+            "lastUpdateTime": 1514639265808
+        }, 
+        {
+            "id": "5a44942cb259205b48b843f7", 
+            "key": "miningNotice", 
+            "name": "使用须知",
+            "value": "<p>     <span style=\"font-size: 36px;\"></span><span style=\"font-size: 36px;\">1 使用前必须通过实名认证，认证完成可获得一台免费APP能量收集器。</span> </p> <p>     <span style=\"font-size: 36px;\">2 每日0点-20点为可启动时间，20点-24点为收取时间段，每日只能收取一次，所有收益次日到账。</span> </p> <p>     <span style=\"font-size: 36px;\">3 产币数量=(提交能量/当日总提交量)x当日区块产量。<br/></span> </p> <p>     <span style=\"font-size: 36px;\">4 安卓用户: 能量收集期间APP无需一直打开，后台亦可收集。<br/></span> </p> <p>     <span style=\"font-size: 36px;\">5 IOS用户: 收集期间，每日充电、断电都必须打开APP，且APP打开频繁越高收集数据越精确。<br/></span> </p> <p>     <span style=\"font-size: 36px;\">【重要提醒：充电期间无法收集能量，手动杀死APP进程将无法收集能量】</span><br/> </p> <p>     <span style=\"font-size: 36px;\"></span><br/> </p>",
+            "desc": "使用须知",
+            "status": 1, 
+            "createDate": 1514443820335, 
+            "lastUpdateTime": 1514641458364
+        }
+    ], 
+    "error": null, 
+    "time": 1514650791694
+}

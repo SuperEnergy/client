@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16G1114" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PromptCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eqo-XX-iz9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="42.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_warnning.png" translatesAutoresizingMaskIntoConstraints="NO" id="O3V-mZ-ucj">
+                                <rect key="frame" x="10" y="9.5" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Rcu-0q-VJo"/>
+                                    <constraint firstAttribute="width" constant="24" id="VvY-k7-m8p"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDk-t7-522">
+                                <rect key="frame" x="44" y="12.5" width="38" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.12415610320000001" blue="0.086042723299999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O3V-mZ-ucj" firstAttribute="centerY" secondItem="Eqo-XX-iz9" secondAttribute="centerY" id="5n3-eU-R62"/>
+                            <constraint firstItem="O3V-mZ-ucj" firstAttribute="leading" secondItem="Eqo-XX-iz9" secondAttribute="leading" constant="10" id="iEy-YB-izB"/>
+                            <constraint firstItem="SDk-t7-522" firstAttribute="leading" secondItem="O3V-mZ-ucj" secondAttribute="trailing" constant="10" id="oCf-hL-uIo"/>
+                            <constraint firstItem="SDk-t7-522" firstAttribute="centerY" secondItem="O3V-mZ-ucj" secondAttribute="centerY" id="ybp-fM-vAo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Eqo-XX-iz9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9zZ-k5-kBj"/>
+                    <constraint firstItem="Eqo-XX-iz9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DwF-NZ-PIY"/>
+                    <constraint firstAttribute="trailing" secondItem="Eqo-XX-iz9" secondAttribute="trailing" id="UUn-6w-2Tn"/>
+                    <constraint firstAttribute="bottom" secondItem="Eqo-XX-iz9" secondAttribute="bottom" constant="1" id="dZ4-JU-VFE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellBgView" destination="Eqo-XX-iz9" id="K3i-gz-400"/>
+                <outlet property="submitImageView" destination="O3V-mZ-ucj" id="nUD-BS-pGb"/>
+                <outlet property="submitTipLabel" destination="SDk-t7-522" id="iRa-FA-6iv"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_warnning.png" width="32" height="32"/>
+    </resources>
+</document>

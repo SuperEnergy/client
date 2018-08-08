@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "a55e28c7-72cd-4275-b36e-817c957978ea++1488",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "a55e28c7-72cd-4275-b36e-817c957978ea++1488" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "a55e28c7-72cd-4275-b36e-817c957978ea++1488" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B6A9BED1-2840-4F17-B414-ED9D2E0E35D5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "a55e28c7-72cd-4275-b36e-817c957978ea++1488" : "Ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Ees",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Ees\/Ees.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/115.29.48.63",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "a55e28c7-72cd-4275-b36e-817c957978ea++1488"
+    }
+  ]
+}
